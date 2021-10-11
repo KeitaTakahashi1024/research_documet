@@ -29,7 +29,7 @@ def calcLonLat(choumei):
             if 'json' in response.headers.get('content-type'):
                 result = response.json()['response']['location'][0]
                 print(i, choumei.iat[i+1, 1],result['x'], result['y'])
-                f.write(choumei.iat[i+1, 1] + "," + result['x'] + "," + result['y'] + "\n")
+                f.write(choumei.iat[i+1, 1] + "," + result['y'] + "," + result['x'] + "\n")
                 #choumeiList.append(choumei.iat[i+1, 1])
                 #latitudeList.append(result['x'])
                 #longtitudeList.append(result['y'])
