@@ -9,7 +9,7 @@ def main():
 
 
 def extractChoumeiFromCsv():
-    choumeiData = pd.read_csv('data/read/hakodate-choumei.csv', header=None, names = ('管轄','町名','ふりがな','郵便番号'))
+    choumeiData = pd.read_csv('data/adress/hakodate-choumei.csv', header=None, names = ('管轄','町名','ふりがな','郵便番号'))
     return choumeiData.astype(str)
 
 def calcLonLat(choumei):
